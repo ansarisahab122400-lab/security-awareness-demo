@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Security Awareness Demo</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #eee;
+    padding: 40px;
+}
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>Demo Login Page</h2>
+
+<form id="login">
+<input type="text" placeholder="Demo username"><br><br>
+
+<input type="password" placeholder="Demo password"><br><br>
+
+<button type="submit">Sign In</button>
+</form>
+
+<p id="message"></p>
+</div>
+
+<script>
+document.getElementById("login")
+.addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("message").innerText =
+    "Training demonstration! Never enter passwords on suspicious links.";
+});
+</script>
+
+</body>
+</html>
